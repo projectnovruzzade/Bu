@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   width: 100%;
   height: 100vh;
-  background-color: rgba(33, 0, 0, 0.56);
+  background-color: rgba(18, 22, 26, 0.56);
   position: absolute;
   z-index: 2;
 }
@@ -292,6 +292,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 99%;
   justify-content: space-around;
   margin: 15px 0;
+  margin-bottom: 7px;
 }
 @media (min-width: 1600px) {
   #header .hero-part {
@@ -309,7 +310,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 #header .detail-part .clock {
-  margin-right: 16px;
+  margin-right: 12px;
+  font-size: 14px;
 }
 #header .detail-part .social-items {
   margin-right: 16px;
@@ -439,6 +441,78 @@ h1, h2, h3, h4, h5, h6 {
 #header .auth-part .form-bar form .btn-login:hover {
   transform: scale(1.05);
 }
+#header .auth-part .isAuth.form-bar .account-information {
+  display: flex;
+  align-items: center;
+}
+#header .auth-part .isAuth.form-bar .account-information a {
+  color: #efc02c;
+}
+#header .auth-part .isAuth.form-bar .account-information a i {
+  font-size: 18px;
+}
+#header .auth-part .isAuth.form-bar .account-information span {
+  background-color: #2d2d36;
+  padding: 8px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+#header .auth-part .isAuth.form-bar .button-group {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+#header .auth-part .isAuth.form-bar .button-group a {
+  position: relative;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  background: #efc02c;
+  color: #fff;
+  font-weight: 500;
+  height: 28px;
+  line-height: 3px;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 120ms ease-in;
+  transition: transform 0.2s;
+  cursor: pointer;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+#header .auth-part .isAuth.form-bar .button-group a:hover {
+  transform: scale(1.05);
+}
+#header .auth-part .isAuth.form-bar .button-group a.account {
+  background: #dfe6e8;
+  color: #000;
+}
+#header .auth-part .isAuth.form-bar .button-group a i {
+  margin-right: 12px;
+}
+#header .auth-part .isAuth.form-bar .button-group .sign-out {
+  border: none;
+  cursor: pointer;
+  background-color: #2d2d36;
+  transition: 0.2s all;
+}
+#header .auth-part .isAuth.form-bar .button-group .sign-out:hover {
+  opacity: 0.7;
+}
+#header .auth-part .isAuth.form-bar .button-group .sign-out i {
+  color: #fff;
+  padding: 4px;
+  border-radius: 3px;
+}
 #header .auth-part .language-bar {
   gap: 10px;
   cursor: pointer;
@@ -458,7 +532,6 @@ h1, h2, h3, h4, h5, h6 {
 #header .nav-part {
   display: flex;
   margin: 0 auto;
-  margin-top: 10px;
   justify-content: space-between;
   align-items: center;
   width: 85%;
@@ -483,7 +556,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #header nav ul li a.link {
   font-family: "Oswald", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   display: inline-block;
   color: #fff;
   transition: color 80ms ease-in;

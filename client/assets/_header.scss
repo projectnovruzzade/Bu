@@ -1,14 +1,12 @@
 @import "./common";
 
-
-
 // ! NAV MOBILE CONTAINER
 
 .overlay {
   display: none;
   width: 100%;
   height: 100vh;
-  background-color: rgb(33 0 0 / 56%);
+  background-color: rgb(18 22 26 / 56%);
   position: absolute;
   z-index: 2;
 
@@ -93,6 +91,7 @@
     width: 99%;
     justify-content: space-around;
     margin: 15px 0;
+    margin-bottom: 7px;
 
     @media (min-width: 1600px) {
       width: 85%;
@@ -109,7 +108,8 @@
     font-size: 15px;
 
     .clock {
-      margin-right: 16px;
+      margin-right: 12px;
+      font-size: 14px;
     }
 
     .social-items {
@@ -167,8 +167,6 @@
         a {
           font-size: 14px;
           color: #fff;
-
-        
         }
       }
 
@@ -200,6 +198,68 @@
       }
     }
 
+    .isAuth.form-bar {
+      .account-information {
+        display: flex;
+        align-items: center;
+        a {
+          color: $text-yellow;
+
+          i {
+            font-size: 18px;
+          }
+        }
+        span {
+          background-color: #2d2d36;
+          padding: 8px;
+          margin-left: 10px;
+          margin-right: 5px;
+        }
+      }
+      
+      .button-group {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+
+        a {
+          @include btn;
+          padding-right: 12px;
+          padding-left: 12px;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+
+          &.account {
+            background: #dfe6e8;
+            color: #000;
+          }
+
+          i {
+            margin-right: 12px;
+          }
+        }
+
+        .sign-out {
+          border: none;
+          cursor: pointer;
+          background-color: #2d2d36;
+          transition: .2s all;
+
+          &:hover {
+            opacity: .7;
+          }
+
+          i {
+            color: #fff;
+            padding: 4px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+
     .language-bar {
       gap: 10px;
       cursor: pointer;
@@ -221,7 +281,6 @@
   .nav-part {
     display: flex;
     margin: 0 auto;
-    margin-top: 10px;
     justify-content: space-between;
     align-items: center;
     width: 85%;
@@ -246,7 +305,7 @@
 
     a.link {
       font-family: "Oswald", sans-serif;
-      font-size: 15px;
+      font-size: 14px;
       display: inline-block;
       color: #fff;
       -webkit-transition: color 80ms ease-in;

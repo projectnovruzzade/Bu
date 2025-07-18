@@ -1,5 +1,6 @@
  $(document).ready(function () {
         $(".menu-icon i").click(() => {
+          console.log("clicked")
             $(".overlay").addClass("show");
           $(".nav-aside").addClass("active");
           $("body").css({

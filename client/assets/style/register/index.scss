@@ -58,25 +58,6 @@ form .my-account .title {
   font-weight: 700;
 }
 
-@media (max-width: 991px) {
-  #register-container {
-    width: 95%;
-  }
-  #register-container .register .container {
-    padding: 20px;
-  }
-  .container .wrapper form {
-    flex-direction: column;
-  }
-
-  form .my-information .title {
-    text-align: left;
-  }
-  form .my-account .title {
-    text-align: left;
-  }
-}
-
 .input-groups .input-content {
   margin-bottom: 7px;
 }
@@ -106,6 +87,48 @@ form .my-account .title {
 
   select {
     @include select;
+  }
+}
+
+@media (max-width: 991px) {
+  #register-container {
+    width: 95%;
+    background-color: transparent;
+  }
+  #register-container .register .container {
+    padding: 20px;
+  }
+  .container .wrapper form {
+    gap: 20px;
+  }
+
+  form .my-information .title {
+    display: none;
+  }
+  form .my-account .title {
+    display: none;
+  }
+
+  .input-content label input,
+  select {
+    border-radius: 7px;
+  }
+  .input-content label span {
+    display: none;
+  }
+  .container .wrapper .agreement {
+    width: 80%;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .register .content-title {
+    text-align: center;
+    font-size: 17px;
+  }
+  .container .wrapper form {
+    flex-direction: column;
   }
 }
 
@@ -164,12 +187,23 @@ form .my-account .title {
   text-align: right;
   margin-top: 30px;
 
+  @media (max-width: 475px) {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+  }
+
   a {
     color: #000;
     font-size: 15px;
 
+    @media (max-width: 991px) {
+      color: #fff;
+    }
+
     @media (max-width: 500px) {
       font-size: 14px;
+
       text-align: center;
     }
   }
