@@ -96,6 +96,7 @@
     @media (min-width: 1600px) {
       width: 85%;
       justify-content: space-between;
+      padding: 0 45px;
     }
 
     @media (max-width: 991px) {
@@ -106,6 +107,7 @@
   .detail-part {
     display: flex;
     font-size: 15px;
+    gap: 15px;
 
     .clock {
       margin-right: 12px;
@@ -131,6 +133,10 @@
     .download-items {
       display: flex;
       gap: 12px;
+
+      @media (max-width: 1124px) {
+        display: none;
+      }
     }
 
     @media (max-width: 1120px) {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -1047,126 +1048,30 @@ footer .copyright-content .download-items {
     align-items: flex-end;
   }
 }
-.depozit-content .card-groups {
-  display: flex;
-  margin-top: 10px;
-  flex-direction: column;
-  padding: 10px;
-}
-
-.depozit-content .card-groups .card {
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-  margin-bottom: 5px;
-  font-size: 13px;
-}
-.depozit-content .card-groups .card p.secondary {
-  opacity: 0.8;
-  font-size: 12px;
-}
-
-.card-groups .card .forward {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 10px 0;
-  background: #eee;
-  gap: 5px;
-}
-.card-groups .card .forward .card-image {
-  flex: 2;
-}
-.card-groups .card .forward .card-image img {
-  width: 60%;
-  margin: 0 auto;
-  height: 95%;
-}
-.card-groups .card .forward .card-type {
-  flex: 2;
-}
-.card-groups .card .forward .card-service {
-  flex: 2;
-}
-.card-groups .card .forward .card-limit {
-  flex: 2;
-}
-.card-groups .card .forward .arrow {
-  flex: 1;
-  background-color: #dadada;
-  height: 66px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-groups .card .forward .arrow.turn i {
-  transform: rotateZ(0);
-}
-.card-groups .card .forward .arrow i {
-  font-size: 18px;
+.depozit-content .content-title {
+  background: #efc02c;
+  color: #fff;
   font-weight: 600;
-  transform: rotateZ(-90deg);
-  transition: 0.3s all;
 }
 
-.card-groups .card .backward {
-  display: none;
-}
-.card-groups .card .backward.show {
-  display: block;
-}
-
-.card-groups .card .backward .content-head {
+.depozit-content .form-groups {
+  margin-top: 25px;
+  padding: 0 10px;
   display: flex;
+  font-size: 12px;
+  gap: 10px;
   align-items: center;
-  gap: 14px;
-  padding: 10px 0;
-  padding-left: 22px;
-  padding-bottom: 3px;
-  font-size: 16px;
-  line-height: 50px;
-  border-bottom: 1px solid #b7b7b7;
-}
-.card-groups .card .backward .content-head img {
-  width: 62px;
-  height: 31px;
 }
 
-.card-groups .card .backward .content-description {
+.depozit-content .form-groups .input-content {
   display: flex;
-}
-.card-groups .card .backward .content-description .amount {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 3px;
+  flex-direction: column;
 }
-.card-groups .card .backward .content-description .description {
+
+.depozit-content .form-groups button {
   flex: 1;
-}
-
-.content-description .amount {
-  padding-top: 25px;
-}
-
-.content-description .amount form .input-content {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-.content-description .amount form .input-content input {
-  width: 200px;
-  outline: none;
-  height: 29px;
-  border: none;
-  padding-left: 5px;
-}
-
-.content-description .amount form button {
-  margin: 0 auto;
-  margin-top: 20px;
   position: relative;
   border: 0;
   outline: 0;
@@ -1190,123 +1095,263 @@ footer .copyright-content .download-items {
   transition: filter 120ms ease-in;
   transition: transform 0.2s;
   cursor: pointer;
-  padding: 18px 28px;
-  width: 170px;
-  margin-left: 65px;
+  height: 36px;
+  align-self: flex-end;
 }
 
-.content-description .amount form .input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+.depozit-content .form-groups input {
+  border: none;
+  outline: none;
+  padding: 9px 4px;
 }
 
-.content-description .description {
-  margin-top: 25px;
-}
-.content-description .description .box {
-  width: 80%;
-  background-color: #eee;
-  padding: 30px;
-  padding-top: 9px;
-  padding-left: 9px;
-  border-radius: 5px;
+.depozit-content .form-groups select {
+  border: none;
+  outline: none;
+  padding: 9px 4px;
 }
 
-@media (max-width: 1024px) {
-  main .container {
-    width: 90%;
+.table-container {
+  border-radius: 8px;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+table {
+  width: 98%;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f4c430;
+  color: #333;
+}
+
+th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+  border-right: 1px solid #e0e0e0;
+}
+
+th:last-child {
+  border-right: none;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  margin: 0;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+tbody tr {
+  background-color: #ebebeb;
+  transition: 0.2s all;
+}
+
+tbody tr:hover {
+  background-color: #c7c4c4;
+}
+
+.date-time {
+  white-space: nowrap;
+}
+
+.amount {
+  font-weight: 600;
+  color: #2c5aa0;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+  th,
+  td {
+    padding: 8px 10px;
   }
 }
-@media (max-width: 991px) {
-  main .container .account-content {
-    display: none;
+@media (max-width: 768px) {
+  main .container {
+    width: 95%;
+  }
+  main .container .depozit-content {
+    background-color: transparent;
+  }
+  .depozit-content .form-groups {
+    flex-wrap: wrap;
+  }
+  .depozit-content .form-groups .input-content label {
+    color: #fff;
+  }
+  .depozit-content .form-groups .content-1 {
+    flex-basis: 40%;
+  }
+  .depozit-content .form-groups .content-2 {
+    flex-basis: 40%;
+  }
+  .depozit-content .form-groups .content-3 {
+    flex-basis: 40%;
+  }
+  .depozit-content .form-groups button {
+    flex: none;
+    flex-basis: 50%;
+    margin: 0 auto;
   }
   main .container .depozit-content .back {
     display: block;
     transform: rotateZ(90deg);
   }
 }
-@media (max-width: 768px) {
-  main .container .depozit-content {
-    background: transparent;
+@media (max-width: 425px) {
+  main .container {
+    width: 98%;
   }
-  .depozit-content .card-groups {
-    margin-top: 0;
-    padding: 0;
+  .depozit-content .form-groups {
+    flex-wrap: wrap;
+    color: #fff;
   }
-  .card-groups .card .forward .card-image {
-    flex: 1;
+  .depozit-content .form-groups .content-1 {
+    flex-basis: 40%;
   }
-  .card-groups .card .forward .card-image img {
-    width: 90px;
-    height: 45px;
+  .depozit-content .form-groups .content-2 {
+    flex-basis: 40%;
   }
-  .card-groups .card .forward .card-service {
-    display: none;
+  .depozit-content .form-groups .content-3 {
+    flex-basis: 40%;
   }
-  .card-groups .card .forward .card-limit {
-    display: none;
-  }
-  .card-groups .card .backward {
-    background-color: #fff;
-  }
-  .card-groups .card .backward .content-head {
-    font-size: 13px;
-  }
-  .card-groups .card .backward .content-head img {
-    display: none;
-  }
-  .card-groups .card .backward .content-description {
-    flex-direction: column;
-  }
-  .amount form {
-    width: 100%;
-  }
-  .content-description .amount form .input-content input {
-    border: 2px solid #eee;
-    border-radius: 5px;
-    width: 220px;
-  }
-  .content-description .amount form .input-content {
-    flex-direction: column;
-    margin-left: 20px;
-    width: 80%;
-    align-items: flex-start;
-    gap: 2px;
-  }
-  .content-description .amount form button {
-    margin: 0;
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 220px;
-  }
-  .content-description .description .desc-title {
-    text-align: center;
-    padding-bottom: 3px;
-    border-bottom: 1px solid #eee;
-  }
-  .content-description .description .box {
+  .depozit-content .form-groups button {
+    flex: none;
+    flex-basis: 100%;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
   }
 }
-@media (max-width: 500px) {
-  .amount form {
-    padding: 0 20px;
+.table-container {
+  border-radius: 8px;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+table {
+  width: 98%;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f4c430;
+  color: #333;
+}
+
+th {
+  padding: 12px 15px;
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+  border-right: 1px solid #e0e0e0;
+}
+
+th:last-child {
+  border-right: none;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+tbody tr {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.date-time {
+  white-space: nowrap;
+}
+
+.amount {
+  font-weight: 600;
+  color: #2c5aa0;
+}
+
+/* Desktop görünümünde gizlenecek sütunlar */
+.desktop-only {
+  display: table-cell;
+}
+
+/* Mobil görünümünde gösterilecek sütunlar */
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  /* Desktop sütunlarını gizle */
+  .desktop-only {
+    display: none;
   }
-  .content-description .amount form .input-content {
-    width: 100%;
-    margin: 0;
+  /* Mobil sütunlarını göster */
+  .mobile-only {
+    display: table-cell;
   }
-  .content-description .amount form .input-content input {
-    width: 100%;
-    height: 32px;
+  table {
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 7px;
+    width: 95%;
   }
-  .content-description .amount form button {
-    width: 100%;
-    margin: 0;
-    margin-top: 20px;
+  th,
+  td {
+    padding: 10px 12px;
+  }
+  /* Mobilde sütun genişlikleri */
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 40%;
+  }
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 30%;
+    text-align: right;
+  }
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 30%;
+    text-align: center;
+  }
+  .table-amount {
+    font-size: 13px;
+  }
+  .table-date-time {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 400px) {
+  table {
+    font-size: 13px;
+  }
+  th,
+  td {
+    padding: 8px 10px;
+  }
+  .date-time {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=index.css.map */
