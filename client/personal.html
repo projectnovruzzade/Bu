@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pul Çıxarışı</title>
+    <title>Şəxsi məlumatlar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +22,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./assets/style/depozit/index.css" />
+    <link rel="stylesheet" href="./assets/style/personal/index.css" />
     <!-- ! OWL CARAOUSEL CSS -->
   </head>
   <body>
@@ -297,7 +297,7 @@
                   <ul>
                     <li><a href="depozit.html">Depozit</a></li>
                     <li>
-                      <a href="moneyBack.html" class="active">Pul Çıxarışı</a>
+                      <a href="moneyBack.html">Pul Çıxarışı</a>
                     </li>
                     <li><a href="./transactions.html">Tarixçələr</a></li>
                   </ul>
@@ -311,7 +311,7 @@
                 </div>
                 <div class="sub-category">
                   <ul>
-                    <li><a href="./personal.html">Şəxsi Məlumatlar</a></li>
+                    <li><a href="#" class="active">Şəxsi Məlumatlar</a></li>
                     <li><a href="./changePass.html">Şifrəni Dəyiş</a></li>
                     <li><a href="">Ozmopay Vouchers</a></li>
                   </ul>
@@ -325,7 +325,7 @@
                 </div>
                 <div class="sub-category">
                   <ul>
-                    <li><a href="" class="active">Bonus</a></li>
+                    <li><a href="">Bonus</a></li>
                     <li><a href="">FREESPİNS</a></li>
                   </ul>
                 </div>
@@ -338,85 +338,59 @@
                 <i class="fa-solid fa-chevron-down back"></i>
               </a>
               <span>
-                <i class="fa-solid fa-wallet"></i> &nbsp; Pul Çıxarışı</span
+                <i class="fa-solid fa-wallet"></i> &nbsp; Şəxsi Məlumatlar</span
               >
             </div>
-            <div class="card-groups">
-              <div class="card">
-                <div class="forward">
-                  <div class="card-image">
-                    <img src="./img/section/cardTocard.png" alt="" />
-                  </div>
-                  <div class="card-type">
-                    <p>Card To Card Deposit</p>
-                    <p class="secondary">Depozit Card To Card Deposit</p>
-                  </div>
-                  <div class="card-service">
-                    <p>Xidmət Haqqı</p>
-                    <p class="secondary">0%</p>
-                  </div>
-                  <div class="card-limit">
-                    <p>LIMIT</p>
-                    <p class="secondary">Minimum: 5 AZN</p>
-                    <p class="secondary">Maksimum: 10000 AZN</p>
-                  </div>
-                  <div class="arrow">
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
+            <div class="balance-information">
+              <div class="balance-amount">
+                <span>Balans</span>
+                <span> <b class="balance-data">9.93</b>&nbsp; AZN </span>
+              </div>
+              <a href="./depozit.html" class="btn-depozit">Depozit</a>
+            </div>
+            <div class="account-detail">
+              <div class="box left">
+                <div class="data-content">
+                  <label for=""> İstifadəçi Adı </label>
+                  <input type="text" value="kamranm" name="" id="" disabled />
                 </div>
-                <div class="backward">
-                  <div class="content-head">
-                    <img src="./img/section/cardTocard.png" alt="" />
-                    <b>Depozit</b> <b class="type">Card To Card Deposit</b>
-                  </div>
-                  <div class="content-description">
-                    <div class="amount">
-                      <form action="">
-                        <div class="input-group">
-                          <div class="input-content">
-                            <label for="" style="color: #625f5f"
-                              >Card Number</label
-                            >
-                            <input
-                              type="number"
-                              name="cardNumber"
-                              placeholder="Card Number *"
-                            />
-                          </div>
-                          <div class="input-content">
-                            <label for="" style="color: #625f5f"
-                              >Card Expiration Date</label
-                            >
-                            <input
-                              type="date"
-                              name="cardDate"
-                              placeholder="Card Expiration Date *"
-                            />
-                          </div>
-                          <div class="input-content">
-                            <label for="" style="color: #625f5f">Amount</label>
-                            <input
-                              type="number"
-                              name="cardAmount"
-                              placeholder="Amount *"
-                            />
-                          </div>
-                        </div>
-
-                        <button>Təsdiq et</button>
-                      </form>
-                    </div>
-                    <div class="description">
-                      <h3 class="desc-title">Açıqlama</h3>
-                      <div class="box">
-                        <ul>
-                          <li>Lorem ipsum dolor sit.</li>
-                          <li>Lorem ipsum dolor sit.</li>
-                          <li>Lorem ipsum dolor sit.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                   <div class="data-content">
+                  <label for=""> İstifadəçi Adı </label>
+                  <input type="text" value="kamranm" name="" id="" disabled />
+                </div>
+                   <div class="data-content">
+                  <label for=""> Mail Adresi </label>
+                  <input type="text" value="zmtdu@punkproof.com" name="" id="" disabled />
+                </div>
+                   <div class="data-content">
+                  <label for=""> Ad </label>
+                  <input type="text" value="kamran" name="" id="" disabled />
+                </div>
+                  <div class="data-content">
+                  <label for=""> Soyad </label>
+                  <input type="text" value="musayev" name="" id="" disabled />
+                </div>
+                  <div class="data-content">
+                  <label for=""> Doğum Tarixi </label>
+                  <input type="text" value="1997-07-11" name="" id="" disabled />
+                </div>
+              </div>
+              <div class="box right">
+                <div class="data-content">
+                  <label for=""> COUNTRY </label>
+                  <input type="text" value="Azerbaijan" name="" id="" disabled />
+                </div>
+                  <div class="data-content">
+                  <label for=""> CITY </label>
+                  <input type="text" value="" name="" id="" disabled />
+                </div>
+                  <div class="data-content">
+                  <label for=""> Adres </label>
+                  <input type="text" value="" name="" id="" disabled />
+                </div>
+                   <div class="data-content">
+                  <label for=""> Mobil Telefon </label>
+                  <input type="text" value="3322720602" name="" id="" disabled />
                 </div>
               </div>
             </div>
@@ -562,6 +536,7 @@
         </div>
       </footer>
     </div>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

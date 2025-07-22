@@ -119,4 +119,9 @@ main .wrapper .sub-category ul li {
   main .container .account-content {
     display: none;
   }
+    main .container .depozit-content .back {
+    display: block;
+    transform: rotateZ(90deg);
+  }
 }
+

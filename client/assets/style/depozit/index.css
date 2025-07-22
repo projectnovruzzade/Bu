@@ -545,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1120px) {
   #header .nav-part {
-    width: 100% !important;
+    width: 90% !important;
   }
 }
 @media (max-width: 991px) {
@@ -806,6 +806,10 @@ main .wrapper .sub-category ul li a.active {
 @media (max-width: 991px) {
   main .container .account-content {
     display: none;
+  }
+  main .container .depozit-content .back {
+    display: block;
+    transform: rotateZ(90deg);
   }
 }
 /* 1. Use a more-intuitive box-sizing model */
